@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>LITTLE LEMON | RESTAURANT</title>
+  </head>
+  <body>
+    <header class="fixed-header">
+      <div id="logo">
+        <a href="#"><img src="./images/Asset_16@4x.png" alt="" /></a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">home</a></li>
+          <li><a href="#deal">menu</a></li>
+          <li><a href="#deal">book</a></li>
+          <li><a href="#about_us">about</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero_content">
+          <h1>Little Lemon Restaurant</h1>
+          <p>The finger licking food.</p>
+        </div>
+      </section>
+
+      <!-- menu section -->
+      <section id="deal">
+        <h2>Make a Deal With Us</h2>
+        <div class="main_menu">
+          <div class="menu">
+            <h2>our new menu</h2>
+            <div class="menu_content">
+              <img class="menu-image" src="./images/feat3.jpg" alt="a pizza" />
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                  id similique possimus quisquam.
+                </p>
+                <div><a href="#">See our new menu</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="menu">
+            <h2>Book a table</h2>
+            <div class="menu_content">
+              <img class="menu-image" src="./images/feat1.jpg" alt="a pizza" />
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                  id similique possimus quisquam.
+                </p>
+                <div><a href="#">Book your table</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="menu">
+            <h2>Opening hours</h2>
+            <div class="menu_content">
+              <img class="menu-image" src="./images/feat4.jpg" alt="a pizza" />
+              <div>
+                <p>Mon - Fri: 10am - 10pm</p>
+                <p>Sat: 10am - 10pm</p>
+                <p>Sun: 10am - 10pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="about_us">
+          <h2>About Us</h2>
+          <p>
+            Little Lemon is a family-owned Mediterranean restaurant in Chicago,
+            founded by Italian brothers Mario and Adrian. We blend Mediterranean
+            traditions with a modern twist, offering a seasonal menu inspired by
+            Italy, Greece, and Turkey. Mario, the chef, brings family recipes
+            from Italy, while Adrian focuses on marketing and expanding the
+            menu. The restaurant offers a relaxed atmosphere with reasonable
+            prices, making it a popular dining spot throughout the day. Little
+            Lemon is a place where culinary traditions and creativity converge
+            to create a warm and welcoming dining experience.
+          </p>
+        </div>
+      </section>
+
+      <!-- contact us -->
+      <section>
+        <div class="contact">
+          <h2>Contact Us</h2>
+          <form id="contact-form">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter you full name"
+              required
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your Email"
+              required
+            />
+
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="10"
+              placeholder="write  your message"
+              required
+            ></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./images/Asset_18@4x.png" alt="Little Lemon Logo" />
+        </div>
+        <div class="footer-info">
+          <p>&copy; 2023 Little Lemon Restaurant</p>
+        </div>
+      </div>
+      <hr class="footer-line" />
+    </footer>
+
+    
+    <script>
+      const header = document.querySelector(".fixed-header");
+      const logo = document.querySelector("#logo img");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+          logo.style.display = "none";
+        } else {
+          header.classList.remove("scrolled");
+          logo.style.display = "block";
+        }
+      });
+    </script>
+  </body>
+</html>
